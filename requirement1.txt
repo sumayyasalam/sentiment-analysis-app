@@ -1,62 +1,6 @@
-{
- "cells": [
-  {
-   "cell_type": "code",
-   "execution_count": 1,
-   "id": "9b676293-79a9-4eec-926f-f272de37efb1",
-   "metadata": {},
-   "outputs": [
-    {
-     "ename": "NameError",
-     "evalue": "name 'streamlit' is not defined",
-     "output_type": "error",
-     "traceback": [
-      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
-      "\u001b[1;31mNameError\u001b[0m                                 Traceback (most recent call last)",
-      "Cell \u001b[1;32mIn[1], line 1\u001b[0m\n\u001b[1;32m----> 1\u001b[0m streamlit\n\u001b[0;32m      2\u001b[0m scikit\u001b[38;5;241m-\u001b[39mlearn\n\u001b[0;32m      3\u001b[0m joblib\n",
-      "\u001b[1;31mNameError\u001b[0m: name 'streamlit' is not defined"
-     ]
-    }
-   ],
-   "source": [
-    "streamlit\n",
-    "scikit-learn\n",
-    "joblib\n",
-    "pandas\n",
-    "numpy\n",
-    "nltk\n",
-    "matplotlib\n",
-    "seaborn\n"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "513026fd-7123-4527-84c1-fc21ff10e404",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Python (base)",
-   "language": "python",
-   "name": "base"
-  },
-  "language_info": {
-   "codemirror_mode": {
-    "name": "ipython",
-    "version": 3
-   },
-   "file_extension": ".py",
-   "mimetype": "text/x-python",
-   "name": "python",
-   "nbconvert_exporter": "python",
-   "pygments_lexer": "ipython3",
-   "version": "3.12.7"
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 5
-}
+streamlit
+scikit-learn
+joblib
+pandas
+numpy
+nltk
