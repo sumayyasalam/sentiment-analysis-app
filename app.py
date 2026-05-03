@@ -1,27 +1,28 @@
 import streamlit as st
-st.markdown("""
-<style>
+
+st.set_page_config(
+    page_title="Sentiment Analysis App",
+    page_icon="💬",
+    layout="centered",
+    initial_sidebar_state="expanded"
+)
+# 🎨 COLORFUL THEME
 st.markdown("""
 <style>
 
-    /* MAIN PAGE BACKGROUND */
+    /* Main background */
     .main {
-        background-color: #0A3D62 !important;  /* Navy Blue */
+        background-color: #F0F7FF;
     }
 
-    /* SIDEBAR BACKGROUND */
+    /* Sidebar */
     section[data-testid="stSidebar"] {
-        background-color: #0A3D62 !important;
+        background-color: #DCEBFF;
     }
 
-    /* MAKE ALL TEXT WHITE */
-    h1, h2, h3, h4, h5, h6, p, label, span, div, .stMarkdown {
-        color: white !important;
-    }
-
-    /* BUTTONS */
+    /* Buttons */
     .stButton>button {
-        background-color: #1B4F72;
+        background-color: #4A90E2;
         color: white;
         border-radius: 10px;
         padding: 10px 20px;
@@ -30,20 +31,18 @@ st.markdown("""
     }
 
     .stButton>button:hover {
-        background-color: #154360;
+        background-color: #1C6DD0;
         color: white;
+    }
+
+    /* Text input */
+    .stTextInput>div>div>input {
+        border-radius: 8px;
+        border: 2px solid #4A90E2;
     }
 
 </style>
 """, unsafe_allow_html=True)
-   
-st.set_page_config(
-    page_title="Sentiment Analysis App",
-    page_icon="💬",
-    layout="centered",
-    initial_sidebar_state="expanded"
-)
-
 
 st.markdown("""
 <h1 style='text-align:center; font-size:45px;'>💬 Sentiment Analysis App</h1>
