@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 st.title("📊 Exploratory Data Analysis")
 
-df = pd.read_csv("datasetNLP.csv")
+df = pd.read_excel("datasetNLP.xlsx", engine="openpyxl")
 
 st.subheader("Dataset Preview")
 st.write(df.head())
