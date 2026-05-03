@@ -1,25 +1,25 @@
 import streamlit as st
 st.markdown("""
 <style>
+st.markdown("""
+<style>
 
-    /* Main page background */
+    /* MAIN PAGE BACKGROUND */
     .main {
-        background-color: #0A3D62; /* Dark Blue */
-        color: white;
+        background-color: #0A3D62 !important;  /* Navy Blue */
     }
 
-    /* Sidebar background */
+    /* SIDEBAR BACKGROUND */
     section[data-testid="stSidebar"] {
-        background-color: #0A3D62;
-        color: white;
+        background-color: #0A3D62 !important;
     }
 
-    /* Make all text white */
-    h1, h2, h3, h4, h5, h6, p, label, span {
+    /* MAKE ALL TEXT WHITE */
+    h1, h2, h3, h4, h5, h6, p, label, span, div, .stMarkdown {
         color: white !important;
     }
 
-    /* Buttons */
+    /* BUTTONS */
     .stButton>button {
         background-color: #1B4F72;
         color: white;
@@ -36,49 +36,14 @@ st.markdown("""
 
 </style>
 """, unsafe_allow_html=True)
+   
 st.set_page_config(
     page_title="Sentiment Analysis App",
     page_icon="💬",
     layout="centered",
     initial_sidebar_state="expanded"
 )
-# 🎨 COLORFUL THEME
-st.markdown("""
-<style>
 
-    /* Main background */
-    .main {
-        background-color: #F0F7FF;
-    }
-
-    /* Sidebar */
-    section[data-testid="stSidebar"] {
-        background-color: #DCEBFF;
-    }
-
-    /* Buttons */
-    .stButton>button {
-        background-color: #4A90E2;
-        color: white;
-        border-radius: 10px;
-        padding: 10px 20px;
-        font-size: 16px;
-        border: none;
-    }
-
-    .stButton>button:hover {
-        background-color: #1C6DD0;
-        color: white;
-    }
-
-    /* Text input */
-    .stTextInput>div>div>input {
-        border-radius: 8px;
-        border: 2px solid #4A90E2;
-    }
-
-</style>
-""", unsafe_allow_html=True)
 
 st.markdown("""
 <h1 style='text-align:center; font-size:45px;'>💬 Sentiment Analysis App</h1>
