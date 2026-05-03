@@ -23,4 +23,3 @@ if st.button("Predict Sentiment"):
         
         # Display result
         st.success(f"Predicted Sentiment: **{prediction.upper()}**")
-
