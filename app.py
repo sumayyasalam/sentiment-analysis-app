@@ -3,8 +3,10 @@ import streamlit as st
 st.set_page_config(
     page_title="Sentiment Analysis App",
     page_icon="💬",
-    layout="centered"
+    layout="centered",
+    initial_sidebar_state="expanded"
 )
+
 
 st.markdown("""
 <h1 style='text-align:center; font-size:45px;'>💬 Sentiment Analysis App</h1>
