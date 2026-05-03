@@ -6,7 +6,43 @@ st.set_page_config(
     layout="centered",
     initial_sidebar_state="expanded"
 )
+# 🎨 COLORFUL THEME
+st.markdown("""
+<style>
 
+    /* Main background */
+    .main {
+        background-color: #F0F7FF;
+    }
+
+    /* Sidebar */
+    section[data-testid="stSidebar"] {
+        background-color: #DCEBFF;
+    }
+
+    /* Buttons */
+    .stButton>button {
+        background-color: #4A90E2;
+        color: white;
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+    }
+
+    .stButton>button:hover {
+        background-color: #1C6DD0;
+        color: white;
+    }
+
+    /* Text input */
+    .stTextInput>div>div>input {
+        border-radius: 8px;
+        border: 2px solid #4A90E2;
+    }
+
+</style>
+""", unsafe_allow_html=True)
 
 st.markdown("""
 <h1 style='text-align:center; font-size:45px;'>💬 Sentiment Analysis App</h1>
