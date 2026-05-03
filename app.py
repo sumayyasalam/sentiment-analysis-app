@@ -1,5 +1,41 @@
 import streamlit as st
+st.markdown("""
+<style>
 
+    /* Main page background */
+    .main {
+        background-color: #0A3D62; /* Dark Blue */
+        color: white;
+    }
+
+    /* Sidebar background */
+    section[data-testid="stSidebar"] {
+        background-color: #0A3D62;
+        color: white;
+    }
+
+    /* Make all text white */
+    h1, h2, h3, h4, h5, h6, p, label, span {
+        color: white !important;
+    }
+
+    /* Buttons */
+    .stButton>button {
+        background-color: #1B4F72;
+        color: white;
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+    }
+
+    .stButton>button:hover {
+        background-color: #154360;
+        color: white;
+    }
+
+</style>
+""", unsafe_allow_html=True)
 st.set_page_config(
     page_title="Sentiment Analysis App",
     page_icon="💬",
