@@ -16,7 +16,14 @@ sns.countplot(x=df['sentiment'], palette="viridis", ax=ax)
 st.pyplot(fig)
 
 st.subheader("Review Length Distribution")
-df['length'] = df['review'].apply(len)
-fig2, ax2 = plt.subplots()
-sns.histplot(df['length'], bins=30, kde=True, color="blue", ax=ax2)
-st.pyplot(fig2)
+st.subheader("Distribution of Review Lengths")
+
+fig, ax = plt.subplots(figsize=(8,5))
+sns.histplot(df['text_length'], bins=30, kde=True, color='blue', ax=ax)
+
+ax.set_title("Distribution of Review Lengths")
+ax.set_xlabel("Number of Characters")
+ax.set_ylabel("Count")
+
+st.pyplot(fig)
+
